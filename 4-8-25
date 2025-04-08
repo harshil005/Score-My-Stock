@@ -1,0 +1,18 @@
+Summary of Implementation:
+Project Setup: A Next.js 14 project with TypeScript, Tailwind CSS, and the App Router is initialized. axios is installed.
+Components:
+src/components/SearchBar.tsx: Handles user input, fetches autocomplete suggestions from /api/search, and calls onStockSelect when a stock is chosen and submitted.
+src/components/StockScoreCard.tsx: Displays loading/error states and the fetched score data (company name, overall score). Includes placeholders for more detailed scores.
+API Backend:
+src/lib/finnhub.ts: Contains utility functions to interact with the Finnhub API (search, profile, basic financials), using an API key (currently a placeholder).
+src/app/api/search/route.ts: Provides autocomplete suggestions by calling searchSymbols.
+src/app/api/score/route.ts: Fetches company profile and basic financial data using getCompanyProfile and getBasicFinancials, calculates a placeholder score, and returns the results.
+Main Page:
+src/app/page.tsx: Integrates the search bar and score card, manages state, and triggers the /api/score fetch when a stock is selected.
+Next Steps & Important Notes:
+Finnhub API Key: You must add your Finnhub API key. Create a file named .env.local in the project root and add the following line, replacing YOUR_KEY with your actual key:
+Apply
+Restart the development server (npm run dev) after creating/modifying this file. Without a valid key, the API calls to Finnhub will fail.
+Scoring Logic: The core scoring logic in src/app/api/score/route.ts (within the calculateScore function) is currently a placeholder. You need to replace it with your specific algorithm based on the KPIs available from the Finnhub basic financials endpoint and the desired weighting/rules outlined in your README.md or other specifications. You'll also need to update the response to include detailed scores (valuation, profitability, etc.) if you want them displayed on the card.
+Run the App: You can start the development server using npm run dev and view the site at http://localhost:3000.
+Styling/UI: The current styling provides a clean, basic layout. You can further refine the UI using Tailwind CSS classes in the components and page file.
