@@ -73,8 +73,22 @@ function selectSuggestion(idx) {
   </div>
   <table class="kpi-table">
     <tr class="kpi-row">
-      <td>KPI 1</td><td>KPI 2</td><td>KPI 3</td><td>KPI 4</td><td>KPI 5</td>
-    </tr>
+  <td class="kpi-cell" data-tooltip="Compound annual growth rate of net income over the last 5 years. We like increasing profits.">
+    Net Income CAGR (5y)
+  </td>
+  <td class="kpi-cell" data-tooltip="Net margin over the last 5 years. A larger net margin means efficient operations and cost discipline.">
+    Avg Net Margin (5y)
+  </td>
+  <td class="kpi-cell" data-tooltip="Compound annual growth rate of earnings per share over the last 5 years. Higher EPS growth rate suggest a more profitable company.">
+    EPS CAGR (5y)
+  </td>
+  <td class="kpi-cell" data-tooltip="Return on Equity (trailing twelve months). The higher the ROE, the better a company is at converting equity into profit.">
+    ROE (TTM)
+  </td>
+  <td class="kpi-cell" data-tooltip="Compound annual growth rate of EBITDA over the last 5 years. It measures operational efficiency.">
+    EBITDA CAGR (5y)
+  </td>
+</tr>
     <tr class="value-row">
       <td>Value 1</td><td>Value 2</td><td>Value 3</td><td>Value 4</td><td>Value 5</td>
     </tr>
