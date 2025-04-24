@@ -1,0 +1,171 @@
+body {
+  background-color: #FFE2FE;
+}
+
+header {
+  background-color: #04724D;
+}
+
+header img {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+
+main h1 {
+  font-family: "Gabarito", sans-serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+main > p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.dropdown-container {
+  position: relative;
+  width: 500px;
+}
+
+.dropdown-container input {
+  background-color: #FFE2FE;
+  border: 2px solid #0D160B;
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+input::placeholder {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* hide dropdown when no matches or outside click */
+.dropdown-list.hidden {
+  display: none;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  border-radius: 4px;
+}
+
+.dropdown-list li {
+    background-color: #FFE2FE;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+}
+.dropdown-list li:hover {
+  background: #ffe2fe4e;
+}
+
+/* the white feedback box under the input */
+.input-feedback {
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #FFE2FE;               /* white/pink */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */          /* a little gap above & below */
+    padding: 1rem;
+    width: 500px;                    /* match your input width */
+    border-radius: 4px;
+    font-family: "Gabarito", sans-serif;
+    font-size: 34px;
+    height: 250px;
+    text-align: center;
+}
+
+/* hidden utility—you already have this for dropdown */
+.hidden {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 2rem;     /* center all direct children */
+}
+  
+.dropdown-container,
+.input-feedback {
+    width: 100%;
+    max-width: 500px;          /* caps them at your input width */
+    margin-bottom: 10rem;       /* space between elements */
+}
+
+/* in styles.css */
+.dropdown-list li.active {
+    background-color: #ffe2fe4e; /* or whatever hover color you like */
+}
+
+/* KPI/value table */
+.kpi-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.kpi-table td {
+    border: 1px solid #0D160B;
+}
+
+.kpi-table .kpi-row td {
+    background-color: #C1DBB3;
+    color: #0D160B;
+    font-family: "Gabarito", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 0.5rem;
+}
+  
+.kpi-table .value-row td {
+    background-color: #FFE2FE;
+    color: #0D160B;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* company header above the table */
+.input-feedback .company-header {
+    font-family: "Gabarito", sans-serif;
+    font-size: 34px;
+    color: #0D160B;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.score-text {
+    color: #0D160B;
+    font-family: "Gabarito", sans-serif;
+    font-size: 34px;
+    text-align: center;
+}
+  
+footer {
+    background-color: #04724D;
+}  
+
+footer img {
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+  
