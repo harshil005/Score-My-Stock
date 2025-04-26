@@ -90,7 +90,7 @@ function selectSuggestion(idx) {
   </td>
 </tr>
     <tr class="value-row">
-      <td>Value 1</td><td>Value 2</td><td>Value 3</td><td>Value 4</td><td>Value 5</td>
+      <td>11.15%</td><td>24.67%</td><td>15.41%</td><td>145.35%</td><td>11.98%</td>
     </tr>
   </table>
   <div class="score-text">
